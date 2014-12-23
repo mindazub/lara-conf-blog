@@ -5,21 +5,25 @@
 
 <div class="container" style="margin: 50px 270px 150px 100px">
 
-
-	<form action="{{ URL::route('account-forgot-password-post')}}" method="post">
+<div class="col-md-6">
+	<form role="form" action="{{ URL::route('account-forgot-password-post')}}" method="post">
 		
-		<div class="field">
-			Email: <input type="text" name="email" {{ (Input::old('email')) ? ' value="'. e(Input::old('email')) .'"' : ''}}>
+		<div>
+			<label for="email"> Email: </label>
+			<input id="email" name="email" type="text" class="form-control" {{ (Input::old('email')) ? ' value="'. e(Input::old('email')) .'"' : ''}}>
 			
 			@if($errors->has('email'))
 				{{ $errors->first('email') }}
 			@endif
 
 		</div>
-		<input type="submit" value="Recover">
+		<br>
+		<div class="form-group">
+			<input type="submit" class="btn btn-primary" value="Recover">
+		</div>
 		{{Form::token()}}
 	</form>
-
+</div>
 </div>
 
 @stop

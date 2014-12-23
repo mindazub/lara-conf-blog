@@ -5,6 +5,8 @@
 
 <!-- <div class="container" style="margin: 50px 270px 150px 100px"> -->
 <!-- <div class="container" style="margin: 50px 270px 150px 100px"> -->
+<div class="container" style="margin: 50px 270px 150px 100px">
+<div class="col-md-6">
 	 <form role="form" action="{{ URL::route('account-change-password-post')}}" method="post">
 	 	
 	 	<div>
@@ -32,5 +34,7 @@
 	 	<input type="submit" value="Change password">
 	 	{{Form::token()}}
 	 </form>
-<!-- </div> -->
+
+</div>
+</div>
 @stop
