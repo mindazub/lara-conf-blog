@@ -18,10 +18,7 @@ class HomeController extends BaseController {
 	public function home()
 	{
 
-		// Mail::send('emails.auth.test', array('name'=>'mind'), function($message){
-		// 	$message->to('mindaugas.azubalis@gmail.com', 'Mindaugas Azubalis')
-		// 			->subject('Testing...');
-		// 		});
+
 
 
 		$posts=Post::paginate(3);
