@@ -9,8 +9,8 @@
 	<form role="form" action="{{ URL::route('account-forgot-password-post')}}" method="post">
 		
 		<div>
-			<label for="email"> Email: </label>
-			<input id="email" name="email" type="text" class="form-control" {{ (Input::old('email')) ? ' value="'. e(Input::old('email')) .'"' : ''}}>
+			<!-- <label for="email"> Email: </label> -->
+			<input id="email" name="email" placeholder="Enter your email here" type="text" class="form-control" {{ (Input::old('email')) ? ' value="'. e(Input::old('email')) .'"' : ''}}>
 			
 			@if($errors->has('email'))
 				{{ $errors->first('email') }}

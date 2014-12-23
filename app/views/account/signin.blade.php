@@ -10,18 +10,20 @@
 		<table>
 		<tr>			
 		<div>
-			<label for="email"> Email: </label>
-			 <input id ="email" class="form-control" type="text" name="email" {{ (Input::old('email')) ? 'value="' . e(Input::old('email')) . '"' : '' }}>
+			<!-- <label for="email"> Email: </label> -->
+			 <input id ="email" class="form-control" placeholder="Email" type="text" name="email" {{ (Input::old('email')) ? 'value="' . e(Input::old('email')) . '"' : '' }}>
 			@if($errors->has('email'))
 				{{ $errors->first('email') }}
 			@endif
 		</div>
 		</tr>
 
+		<br>
+
 		<tr>
 		<div>
-			<label for="password"> Password: </label>
-			<input id="password" class="form-control" type="password" name="password">
+			<!-- <label for="password"> Password: </label> -->
+			<input id="password" class="form-control" placeholder="Password"  type="password" name="password">
 			@if($errors->has('password'))
 				{{ $errors->first('password') }}
 			@endif
@@ -38,6 +40,9 @@
 				Remember me
 			</label>
 		</div>
+
+		<br>
+
 		</tr>
 		
 
