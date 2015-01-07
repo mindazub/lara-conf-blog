@@ -53,7 +53,7 @@
           
               <div class="col-md-10" style="margin-left:10px; margin-bottom:20px; ">
                 <div class="panel-heading" >
-                  <h2><a href="{{ URL::action('post-show', $post->slug) }}">{{ e($post->title) }}</a> </h2> <small><i>Created By {{ e($post->user_id) }}, {{ $post->published_at }}</i></small>
+                  <h2><a href="{{ URL::action('post-show', $post->slug) }}">{{ e($post->title) }}</a> </h2> <small><i>Created By , {{ $post->published_at }}</i></small>
                 </div>
                 <p style="margin-left:15px; text-align: justify; margin-right:40px;">
                   <!-- {{ ($post->body) }} <a href="#fakelink">Read more &rarr</a> -->
