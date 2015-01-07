@@ -11,7 +11,7 @@
     
 		<div class="col-md-10" style="margin-left:10px; margin-bottom:20px; ">
                 <div class="panel-heading" >
-                  <h2><a href="{{ URL::action('post-show', $post->slug) }}">{{ e($post->title) }}</a> </h2> <small><i>Created By , {{ $post->published_at }}</i></small>&nbsp&nbsp&nbsp<small> <i>Comments: 15</i></small>
+                  <h2><a href="{{ URL::action('post-show', $post->slug) }}">{{ e($post->title) }}</a> </h2> <small><i>Created By {{ e($post->user->username) }}, {{ $post->published_at }}</i></small>&nbsp&nbsp&nbsp<small> <i>Comments: 15</i></small>
                 </div>
 
                 <div></div>
