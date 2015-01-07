@@ -32,4 +32,8 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
 	protected $primaryKey = 'user_id';
 
+	public function posts(){
+		return $this->hasMany('Post');
+	}
+
 }
