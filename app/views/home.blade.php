@@ -51,11 +51,12 @@
             <!-- {{ HTML::image('img/pirmas.jpg', $alt="pradinis") }} -->
           </div>
           
-              <div class="col-md-10" style="margin-left:10px; margin-bottom:20px; ">
+              <div class="col-md-10" style="width: 80%; margin-bottom:20px; margin-left: 30px; margin-right: 10px;">
                 <div class="panel-heading" >
-                  <h2><a href="{{ URL::action('post-show', $post->slug) }}">{{ e($post->title) }}</a> </h2> <small><i>Created By {{ e($post->user->username) }}, {{ $post->published_at }}</i></small>
+                  <div style="margin-left: -15px;"><h2 style="font: bold 2em serif;"><a href="{{ URL::action('post-show', $post->slug) }}">{{ e($post->title) }}</a> </h2> <small><i>Created By {{ e($post->user->username) }}, {{ $post->published_at }}</i></small>
+ </div>
                 </div>
-                <p style="margin-left:15px; text-align: justify; margin-right:40px;">
+                <p style="padding: 0 25px; margin-left:15px; text-align: justify; margin-right:40px;">
                   <!-- {{ ($post->body) }} <a href="#fakelink">Read more &rarr</a> -->
                   {{ Markdown::parse(Str::limit($post->body, 300)) }} <a href="{{ URL::action('post-show', $post->slug) }}">[Read more...&rarr;]</a>
                 </p>

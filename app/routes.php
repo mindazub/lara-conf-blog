@@ -104,6 +104,24 @@ Route::group(array('before' => 'auth'), function(){
 
 		));
 
+
+	/**
+	SHOP
+	*/
+	Route::get('/shop', array(
+		'as' => 'getShop',
+		'uses' => 'ShopController@getShop'
+		));
+
+	/**
+	FORUM
+	*/
+
+	Route::get('/forum', array(
+		'as' => 'getForum',
+		'uses' => 'ForumController@getForum'
+		));
+
 	/** 
 	Sign out (GET)
 	*/

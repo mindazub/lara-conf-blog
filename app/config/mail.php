@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'your@gmail.com', 'name' => 'name'),
+	'from' => array('address' => 'mindaugas.azubalis@gmail.com', 'name' => 'Mindazub'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'email@gmail.com',
+	'username' => 'mindaugas.azubalis@gmail.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'pssw',
+	'password' => 'generation123',
 
 	/*
 	|--------------------------------------------------------------------------

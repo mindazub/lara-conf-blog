@@ -12,17 +12,17 @@
                 <!-- <li><a href="#fakelink">Home<span class="navbar-unread">2</span></a></li> -->
                     <li><a href="{{ URL::action('home')}}">Home</a></li>
                     <li><a href="#fakelink">Forum</a></li>
-                    <li><a href="#fakelink">Shop</a></li>
+                    <li><a href="{{ URL::action('getShop')}}">Shop</a></li>
                     <li><a href="#fakelink">About Us</a></li>
                     <li><a href="#fakelink">Not Logged In</a></li>
                                          
                </ul>
                 @else
                <ul class="nav navbar-nav navbar-left">
-                    <li><a href="{{ URL::action('home')}}">Home</a></li>
+                    <li><a href="{{ URL::action('home') }}">Home</a></li>
                     <li><a href="#fakelink">Logged In</a></li>
-                    <li><a href="#fakelink">Forum</a></li>
-                    <li><a href="#fakelink">Shop</a></li>
+                    <li><a href="{{ URL::action('getForum')}}">Forum</a></li>
+                    <li><a href="{{ URL::action('getShop')}}">Shop</a></li>
                     <li><a href="{{ URL::action('getUpload')}}">Upload</a></li>
                     <li><a href="#fakelink">About Us</a></li>                                    
                </ul> 

@@ -8,11 +8,21 @@
 	<div class="container">
     
 
-    
-		<div class="col-md-10" style="margin-left:10px; margin-bottom:20px; ">
-                <div class="panel-heading" >
-                  <h2><a href="{{ URL::action('post-show', $post->slug) }}">{{ e($post->title) }}</a> </h2> <small><i>Created By {{ e($post->user->username) }}, {{ $post->published_at }}</i></small>&nbsp&nbsp&nbsp<small> <i>Comments: 15</i></small>
+
+<div class="col-md-12">
+
+    <div class="panel-heading" style="text-align: center;">
+                  <h2 style="font-size: 3em;" ><a href="{{ URL::action('post-show', $post->slug) }}">{{ e($post->title) }}</a> </h2> <small><i>Created By {{ e($post->user->username) }}, {{ $post->published_at }}</i></small>&nbsp&nbsp&nbsp<small> <i>Comments: 15</i></small>
                 </div>
+
+</div>
+
+
+  <div class="col-md-12">
+
+
+		<div class="col-md-8" style="margin-left:10px; margin-bottom:20px; ">
+                
 
                 <div></div>
 
@@ -30,6 +40,28 @@
                   <!-- {{ ($post->body) }} <a href="#fakelink">Read more &rarr</a> -->
                   {{ Markdown::parse($post->body) }} 
                 </article>
+
+
+                
+
+
+
+	      </div> <!-- col8 -->
+
+        <div class="class-md-4" style="margin-top: 110px;">
+
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        </div>
+
+    </div>        
+
+<div class="col-md-12">
 
 <!-- disqus comentarai-->
 
@@ -49,10 +81,7 @@
   
 <!-- disqus comentarai-->
 
-
-	      </div> <!-- col10 -->
-
-
+</div>
 
 
       </div>

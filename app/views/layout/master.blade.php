@@ -14,6 +14,9 @@
     <!-- <link href="dist/css/vendor/bootstrap.min.css" rel="stylesheet"> -->
 
     <!-- Loading Flat UI -->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
     {{ HTML::style('assets/css/flat/flat-ui.css') }}
     {{ HTML::style('docs/assets/css/demo.css') }}
     <!-- <link href="css/flat/flat-ui.css" rel="stylesheet"> -->
@@ -32,7 +35,7 @@
       <script src="dist/js/vendor/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body style="background-color: #f2f2f2">
+  <body style="background-color: #f2f2f2; font: 18px/30px Georgia, sans-serif;">
     <div class="container">
       <div class="demo-headline">
         <div class="demo-logo">
